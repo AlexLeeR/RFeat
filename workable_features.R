@@ -7,7 +7,7 @@ library(runner)
 library(randomForest)
 library(caret)
 
-kline_data = readRDS(file = 'data/data.rds')
+kline_data = readRDS(file = 'data.rds')
 
 rsi_scalar = function(series) {
   delta = diff(series)
