@@ -3,7 +3,7 @@ library(here)
 
 source(here('R/functions.R'))
 
-data = readRDS(here('data/data.rds'))
+data = readRDS(here('data.rds'))
 
 features_list <- list(
   sma_close_dist   = sma_close_dist(data, n = 10),
@@ -41,5 +41,5 @@ for (feat_name in names(features_list)) {
   features_array[,,feat_name] <- features_list[[feat_name]]
 }
 
-saveRDS(features_array, here('data/features.rds'))
+saveRDS(features_array, here('features.rds'))
 
