@@ -1,7 +1,7 @@
 source('R/feature_function.R')
 
-data = readRDS('data/data.rds')
-features = readRDS('data/features.rds')
+data = readRDS('data.rds')
+features = readRDS('features.rds')
 full_idx = which(!is.na(apply(features,2,sum)))
 full_features = 1:dim(features)[3]
 
