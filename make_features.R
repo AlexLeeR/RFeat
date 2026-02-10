@@ -1,7 +1,7 @@
 library(abind)
 library(here)
 
-source(here('R/functions.R'))
+source(here('functions.R'))
 
 data = readRDS(here('data.rds'))
 
